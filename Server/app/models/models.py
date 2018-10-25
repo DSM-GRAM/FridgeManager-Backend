@@ -83,6 +83,10 @@ class FoodModel(BaseModel):
     is_black = BooleanField(
         default=False
     )
+    ordering_number = IntField(
+        required=True,
+        default=0
+    )
 
 # -Category-
 # grain 곡물
